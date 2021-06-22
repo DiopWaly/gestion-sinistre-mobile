@@ -1,0 +1,47 @@
+@import "../../../assets/styles/color.scss";
+.logo{
+  ion-img{
+    width: 140px !important;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  margin-top:  31.75px;
+}
+.illust{
+  ion-img{
+    width: 226.5px;
+    height: 106.5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18.75px;
+  }
+}
+
+ion-col{
+  width: 110px;
+  height: 100px;
+  border: 1px solid $boderHome;
+  margin-top: 24.75px;
+}
+ion-col:hover{
+  // content: Url('../../assets/icons/tab/tab/mon-profil.svg');
+  background-color: $succes;
+}
+.first{
+  margin-right: 28.5px;
+}
+.success-icone{
+  width: 30px;
+  height: 36px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+ion-label{
+  color: $succes !important;
+  font-family: "Rawson-Medium" !important;
+  font-size: 12px !important;
+  text-align: center;
+  margin-top: 6px;
+}

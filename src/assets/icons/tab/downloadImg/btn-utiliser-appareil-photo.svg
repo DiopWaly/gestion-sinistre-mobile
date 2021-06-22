@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="166" height="45" viewBox="0 0 166 45">
+  <g id="Groupe_1173" data-name="Groupe 1173" transform="translate(-212 -126)">
+    <g id="Rectangle_1036" data-name="Rectangle 1036" transform="translate(212 126)" fill="none" stroke="#7a774c" stroke-width="1">
+      <rect width="166" height="45" stroke="none"/>
+      <rect x="0.5" y="0.5" width="165" height="44" fill="none"/>
+    </g>
+    <g id="photo-camera" transform="translate(227.121 139.763)">
+      <g id="Groupe_607" data-name="Groupe 607" transform="translate(0 0)">
+        <g id="Groupe_606" data-name="Groupe 606">
+          <path id="Tracé_2475" data-name="Tracé 2475" d="M17.543,35.768a.713.713,0,0,0,.713-.713V30.42A2.856,2.856,0,0,0,15.4,27.567H14.321a.713.713,0,0,1-.675-.483l-.216-.634A2.139,2.139,0,0,0,11.4,25H6.849a2.145,2.145,0,0,0-2.012,1.413L4.59,27.1a.715.715,0,0,1-.671.471H2.852A2.856,2.856,0,0,0,0,30.42v8.2a2.856,2.856,0,0,0,2.852,2.852H15.4a2.856,2.856,0,0,0,2.852-2.852.713.713,0,1,0-1.426,0A1.428,1.428,0,0,1,15.4,40.047H2.852A1.428,1.428,0,0,1,1.426,38.62v-8.2a1.428,1.428,0,0,1,1.426-1.426H3.919a2.145,2.145,0,0,0,2.012-1.413l.247-.684a.715.715,0,0,1,.671-.471H11.4a.713.713,0,0,1,.675.483l.216.634a2.139,2.139,0,0,0,2.025,1.45H15.4a1.428,1.428,0,0,1,1.426,1.426v4.635A.713.713,0,0,0,17.543,35.768Z" transform="translate(0 -25)" fill="#7a774c"/>
+        </g>
+      </g>
+      <g id="Groupe_609" data-name="Groupe 609" transform="translate(4.707 4.707)">
+        <g id="Groupe_608" data-name="Groupe 608">
+          <path id="Tracé_2476" data-name="Tracé 2476" d="M136.457,157a4.457,4.457,0,1,0,4.457,4.457A4.462,4.462,0,0,0,136.457,157Zm0,7.488a3.031,3.031,0,1,1,3.031-3.031A3.034,3.034,0,0,1,136.457,164.488Z" transform="translate(-132 -157)" fill="#7a774c"/>
+        </g>
+      </g>
+    </g>
+    <text id="Utiliser_l_appareil" data-name="Utiliser l’appareil" transform="translate(254 153)" fill="#7a774c" font-size="12" font-family="Rawson-SemiBold, Rawson" font-weight="600"><tspan x="0" y="0">UTILISER L’APPAREIL</tspan></text>
+  </g>
+</svg>

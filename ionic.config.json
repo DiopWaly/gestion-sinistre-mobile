@@ -1,5 +1,7 @@
 {
   "name": "gestion-sinistre-mobile",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

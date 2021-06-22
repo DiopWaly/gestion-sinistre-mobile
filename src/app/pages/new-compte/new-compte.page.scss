@@ -1,0 +1,322 @@
+@import "../../../assets/styles/color.scss";
+ion-header{
+  ion-toolbar{
+    height: 40px !important;
+  }
+}
+.slid_1{
+  // h1{
+  //   color: $succes;
+  //   font-family: "Rawson-SemiBold";
+  //   font-size: 23px;
+  //   text-transform: uppercase;
+  //   text-align: center;
+  //   margin: 0;
+  // }
+  hr{
+    width: 30px;
+    border: none;
+    border-top: 0.26em solid $maron;
+    margin-top: 0;
+    // margin-bottom: 0;
+  }
+  ion-input{
+    width: 218.25px;
+    height: 24px;
+    border-bottom: 1px solid $borderBottomInput;
+    font-family: "Rawson-Medium";
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    --padding-bottom: 0 !important;
+    --padding-top: 0 !important;
+    ion-img{
+      position: absolute;
+      transform: translateX(200px);
+      cursor: pointer;
+    }
+  }
+
+  .operateur{
+    .select-icon{
+      display: none;
+    }
+  }
+  .tel{
+    width: 170px;
+    ion-img{
+      transform: translateX(158px);
+    }
+  }
+  .phone{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .condition{
+    margin-left: auto;
+    margin-right: auto;
+    width: 255px;
+    ion-label{
+      color: $succes !important;
+      font-family: "Rawson-Medium" !important;
+      font-size: 10px !important;
+      margin: 0 !important;
+    }
+    .checkbox{
+      cursor: pointer;
+      width: 15px;
+      height: 15px;
+      border: 1px solid $succes;
+      margin-right: 6px;
+      transform: translateY(-1px);
+      ion-img{
+        width: 13px;
+      }
+    }
+    .active{
+      background-color: $succes;
+    }
+    .inactive{
+      background-color: $white;
+    }
+  }
+}
+.titre{
+  color: $succes;
+  font-family: "Rawson-SemiBold";
+  font-size: 23px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+.ligneTitre{
+  width: 30px;
+  border: none;
+  border-top: 0.26em solid $maron;
+  margin-top: 0;
+  // margin-bottom: 0;
+}
+ion-button{
+  width: 218.25px;
+  height: 33.75px;
+  p{
+    font-family: "Rawson-SemiBold";
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-top: 2.5px;
+  }
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+.slid_2{
+  .verification{
+    margin-top: 20px;
+    text-align: center;
+    span{
+      color: $succes;
+      font-family: "Rawson-LightIt";
+      font-size: 14px;
+    }
+  }
+  .codeValidation{
+    text-align: center;
+    margin-top: 25px;
+    ion-label{
+      color: $succes;
+      font-family: "Rawson-SemiBold";
+      font-size: 17px;
+      text-transform: uppercase;
+    }
+    .leftcode{
+      margin-left: auto;
+    }
+    .rightcode{
+      margin-right: auto;
+    }
+  }
+  // ion-input:focus{
+  //   color: red !important;
+  // }
+  .codeRecu{
+    color: $succes;
+    font-size: 12px;
+    text-align: center;
+    .nonRecu{
+      font-family: "Rawson-LightIt";
+      margin-bottom: 0;
+      margin-top: 4px;
+    }
+    .renvoiCode{
+      font-family: "Rawson-MediumIt";
+    }
+  }
+}
+ion-input{
+  // width: 218.25px;
+  // height: 24px;
+  border-bottom: 1px solid $borderBottomInput;
+  font-family: "Rawson-Medium";
+  text-align: left;
+  color: $succes;
+}
+.label{
+  color: $labelInput !important;
+  font-family: "Rawson-SemiBold" !important;
+  font-size: 13px !important;
+  max-width: 218.25px !important;
+  width: 100% !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+.custom-options{
+  border-bottom: 1px solid $borderBottomInput;
+  max-width: 32px;
+  color: $succes;
+  font-family: "Rawson-SemiBold";
+  font-size: 13px;
+  margin-top: 3px;
+  transform: translateX(10px);
+}
+.illustration_1{
+  margin-top: 95px;
+}
+.illustration_2{
+  margin-top: 100px;
+}
+.illustration_3{
+  margin-top: 10px;
+}
+.illustration_4{
+  margin-top: 40px; // a fixed 60px
+  // position: fixed;
+}
+.illustration_5{
+  margin-top: 90px;
+}
+
+.slid_3{
+  margin-bottom: 10px;
+  ion-input{
+    --padding-bottom: 0 !important;
+    --padding-top: 0 !important;
+  }
+  .nomInput{
+    margin-left: auto;
+  }
+  .prenomInput{
+    margin-right: auto;
+  }
+  .nomprenom{
+    font-family: "Rawson-Medium";
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  .cin{
+    .label{
+      margin-left: 0 !important;
+    }
+  }
+  .address{
+    padding-left: 0;
+    padding-right: 0;
+    .custom-options{
+      max-width: 100%;
+      width: 275px !important;
+      transform: none;
+      padding-left: 10px;
+    }
+    .iconmap{
+      width: 12px;
+      margin-bottom: 7px;
+      transform: translateX(5px);
+    }
+  }
+  .lieuNaiss{
+    padding-top: 25px;
+    .custom-options{
+      max-width: 100%;
+      width: 275px !important;
+      transform: none;
+    }
+  }
+  .photoprofil{
+    // width: 255px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    .profil{
+      width: 80px;
+      height: 80px;
+      zoom: 1.2;
+    }
+    .rmprofil{
+      cursor: pointer;
+      width: 10px;
+      height: 10px;
+      // transform: translate(66px,-84px);
+      transform: translate(87px,-97px);
+    }
+  }
+}
+
+.slid_4{
+  .indication{
+    text-align: center;
+    color: $succes;
+    margin-top: 20px;
+    h3{
+      font-family: "Rawson-SemiBold";
+      font-size: 14px;
+    }
+    p{
+      font-family: "Rawson-Medium";
+      font-size: 11px;
+      margin: 0;
+    }
+  }
+  .verificationEmpreinte{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    ion-img{
+      width: 147px;
+      height: 147px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .tentative{
+    text-align: center;
+    ion-label{
+      color: $succes;
+      font-family: "Rawson-Medium";
+      font-size: 8px;
+      margin: 0;
+    }
+  }
+}
+
+.slid_5{
+  .validEmpreinte{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    ion-img{
+      width: 57px;
+      height: 81px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .successConnection{
+    color: $succes;
+    font-family: "Rawson-SemiBold";
+    font-size: 12px;
+    width: 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+}
+

@@ -1,0 +1,46 @@
+<ion-header>
+  <!-- <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar> -->
+</ion-header>
+
+<ion-content>
+  <ion-list  *ngIf="!connexion" lines="none">
+    <ion-item class="logo">
+      <ion-img src="../../assets/icons/auth/Logo-salam-assurance.svg"></ion-img>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="sucess">Nom d’utilisateur</ion-label>
+      <ion-input>
+        <ion-img src="../../assets/icons/connexion/Nom-d'utilisateur.svg" slot="end"></ion-img>
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="sucess">Mot de passe</ion-label>
+      <ion-input type="password">
+        <ion-img src="../../assets/icons/connexion/Mot-de-passe.svg" slot="end"></ion-img>
+      </ion-input>
+    </ion-item>
+    <p class="forgetPsw">Mot de passe oublié ?</p>
+    <ion-item lines="none">
+      <ion-button color="success" expand="full" class="connexion" (click)="connecter()">connexion</ion-button>
+    </ion-item>
+    <p class="empreinte">s’authentifier avec empreinte digital</p>
+    <p class="finger">Please place your finger over the sensor</p>
+    <ion-item class="fingerprint" lines="none">
+      <ion-img src="../../assets/icons/connexion/fingerprint.svg"></ion-img>
+    </ion-item>
+  </ion-list>
+
+  <ion-list *ngIf="connexion" lines="none" class="reuissie">
+    <ion-item class="connexionReussie">
+      <ion-img src="../../assets/icons/connexion/connexion-reussie.svg" routerLink="/tabs"></ion-img>
+    </ion-item>
+    <ion-item>
+      <p class="txtReuissie">Connexion réussie</p>
+    </ion-item>
+  </ion-list>
+  <ion-item class="illustration" lines="none">
+    <ion-img src="../../assets/icons/auth/illustration-salama-web.svg"></ion-img>
+  </ion-item>
+</ion-content>

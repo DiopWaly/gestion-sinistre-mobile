@@ -1,0 +1,177 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="slid_1" *ngIf="step === 1">
+    <h1 class="titre">Création compte</h1>
+    <hr class="ligneTitre"/>
+    <ion-list lines="none">
+      <ion-item>
+        <ion-label class="label" position="floating" color="sucess">Nom d’utilisateur</ion-label>
+        <ion-input>
+          <ion-img src="../../assets/icons/tab/newcompte/username-valide-web.svg" slot="end"></ion-img>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label class="label" position="floating" color="sucess">Mot de passe</ion-label>
+        <ion-input type="password">
+          <ion-img src="../../assets/icons/tab/newcompte/mot-de-passe-visible-web.svg" slot="end"></ion-img>
+        </ion-input>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-row class="phone">
+          <ion-label class="label" color="success">Téléphone</ion-label>
+          <ion-col size="2" class="ion-no-padding operateur">
+            <ion-select interface="popover" class="custom-options ion-no-padding">
+              <ion-select-option value="">77</ion-select-option>
+              <ion-select-option value="blonde">78</ion-select-option>
+              <ion-select-option value="black">76</ion-select-option>
+              <ion-select-option value="red">70</ion-select-option>
+              <ion-select-option value="red">79</ion-select-option>
+            </ion-select>
+          </ion-col>
+          <ion-col size="10" class="ion-no-padding">
+            <ion-input type="text" class="tel">
+              <ion-img src="../../assets/icons/tab/newcompte/telephone.svg" slot="end"></ion-img>
+            </ion-input>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+      <ion-item class="condition">
+        <!-- <input type="checkbox" /> -->
+        <div [ngClass]="check ? 'checkbox active':'checkbox inactive'" (click)="select(check)">
+          <ion-img src="../../assets/icons/tab/newcompte/username-valide-webwhite.svg" *ngIf="check"></ion-img>
+        </div>
+        <ion-label>J’accepte les termes et conditions d’utilisations</ion-label>
+      </ion-item>
+      <!-- <ion-item>
+        <ion-button expand="full" color="success" (click)="suivant()"><p>SUIVANT</p></ion-button>
+      </ion-item> -->
+    </ion-list>
+  </div>
+  <div class="slid_2" *ngIf="step === 2">
+    <ion-list lines="none" class="ion-no-padding">
+      <ion-item>
+        <ion-img src="../../assets/icons/auth/illustration-salama-web.svg"></ion-img>
+      </ion-item>
+      <div class="verification">
+        <h1 class="titre">vérification compte</h1>
+        <span>Saisir le code de (04) chiffres reçu par sms</span>
+      </div>
+      <div class="codeValidation">
+        <ion-label>Saisir le code</ion-label>
+        <ion-row>
+          <ion-col size="1" class="leftcode">
+            <ion-input class="ion-no-padding"></ion-input>
+          </ion-col>
+          <ion-col size="1">
+            <ion-input class="ion-no-padding"></ion-input>
+          </ion-col>
+          <ion-col size="1">
+            <ion-input class="ion-no-padding"></ion-input>
+          </ion-col>
+          <ion-col size="1" class="rightcode">
+            <ion-input class="ion-no-padding"></ion-input>
+          </ion-col>
+        </ion-row>
+      </div>
+      <ion-item class="codeRecu">
+        <ion-label class="nonRecu">CODE NON-REÇU ?<span class="renvoiCode"> RENVOYER LE CODE</span></ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+  <span *ngIf="step > 2 && step < 6">
+    <h1 class="titre">COMPLÉTER VOTRE PROFIL</h1>
+    <hr class="ligneTitre"/>
+    <div class="slid_3" *ngIf="step === 3">
+      <ion-list lines="none">
+        <div>
+          <ion-row>
+            <ion-col size="6" class="nomInput">
+              <ion-item lines="none">
+                <ion-label class="label" position="floating">Nom</ion-label>
+                <ion-input class="ion-no-padding nomprenom"></ion-input>
+              </ion-item>
+            </ion-col>
+            <ion-col size="6" class="prenomInput">
+              <ion-item lines="none">
+                <ion-label class="label" position="floating">Prenom</ion-label>
+                <ion-input class="ion-no-padding nomprenom"></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="12">
+              <ion-item lines="none" class="cin">
+                <ion-label class="label" position="floating">CIN /N° PASSPORT</ion-label>
+                <ion-input class="ion-no-padding"></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="12">
+              <ion-item lines="none" class="address">
+                <ion-img class="iconmap" src="../../assets/icons/tab/google-map-web.svg"></ion-img>
+                <ion-select interface="popover" class="ion-no-padding custom-options">
+                  <ion-select-option value="peperoni">DAKAR (SÉNÉGAL)</ion-select-option>
+                  <ion-select-option value="hawaii">THIES (SÉNÉGAL)</ion-select-option>
+                </ion-select>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="6" class="">
+              <ion-item lines="none">
+                <ion-label class="label" position="floating">DATE</ion-label>
+                <ion-input class="ion-no-padding"></ion-input>
+              </ion-item>
+            </ion-col>
+            <ion-col size="6" class="lieuNaiss">
+              <ion-item lines="none">
+                <ion-select interface="popover" class="ion-no-padding custom-options">
+                  <ion-select-option value="peperoni">DAKAR</ion-select-option>
+                  <ion-select-option value="hawaii">THIES</ion-select-option>
+                </ion-select>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-item class="photoprofil">
+            <ion-thumbnail slot="start">
+              <ion-img src="../../assets/icons/tab/newcompte/7.jpg" class="profil"  (click)="file.click()"></ion-img>
+              <ion-img src="../../assets/icons/tab/downloadImg/filesAction/supprimer-btn.svg" class="rmprofil"></ion-img>
+            </ion-thumbnail>
+            <input type="file" #file hidden="true" />
+          </ion-item>
+        </div>
+      </ion-list>
+    </div>
+    <div class="slid_4" *ngIf="step === 4">
+      <div class="indication">
+        <h3>Connexion avec empreinte</h3>
+        <p>Placer votre pouce dans le cadran pendant 10 secondes.</p>
+        <p>Refaire la même chose pour confirmer</p>
+      </div>
+      <ion-item lines="none" class="verificationEmpreinte">
+        <ion-img src="../../assets/icons/tab/newcompte/verification-empreinte.svg"></ion-img>
+      </ion-item>
+      <ion-item lines="none" class="tentative">
+        <ion-label>Première tentative pour confirmer attendre 10 secondes</ion-label>
+      </ion-item>
+    </div>
+    <div class="slid_5" *ngIf="step === 5">
+      <ion-item lines="none" class="validEmpreinte">
+        <ion-img src="../../assets/icons/tab/newcompte/Empreinte-validée.svg"></ion-img>
+      </ion-item>
+      <div class="successConnection">
+          <ion-label>Votre connexion avec empreinte est confirmée avec succès</ion-label>
+      </div>
+    </div>
+  </span>
+  <ion-button expand="full" color="success" (click)="suivant()"><p>SUIVANT</p></ion-button>
+  <ion-img src="../../assets/icons/auth/illustration-salama-web.svg" [class]="'illustration_'+step"></ion-img>
+</ion-content>

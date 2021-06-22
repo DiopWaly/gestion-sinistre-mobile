@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="348" height="114" viewBox="0 0 348 114">
+  <defs>
+    <filter id="Rectangle_602" x="28" y="0" width="320" height="114" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_601" x="0" y="17" width="76" height="76" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Groupe_1162" data-name="Groupe 1162" transform="translate(-37 -108)">
+    <g transform="matrix(1, 0, 0, 1, 37, 108)" filter="url(#Rectangle_602)">
+      <rect id="Rectangle_602-2" data-name="Rectangle 602" width="302" height="96" transform="translate(37 6)" fill="#eaf8f8"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 37, 108)" filter="url(#Rectangle_601)">
+      <rect id="Rectangle_601-2" data-name="Rectangle 601" width="70" height="70" transform="translate(2 19)" fill="#1f6666"/>
+    </g>
+    <g id="sedan-car-front" transform="translate(56 141.537)">
+      <path id="Tracé_953" data-name="Tracé 953" d="M33.5,15.927a1.067,1.067,0,0,0-.073-.082l-1.252-1.208c1.038-.235,2.155-1.105,2.155-2,0-1.039-1.443-1.408-2.674-1.408-1.287,0-1.437.882-1.452,1.505L26.979,9.623a4.557,4.557,0,0,0-2.83-1.16H11.567a4.559,4.559,0,0,0-2.83,1.16L5.509,12.737c-.017-.623-.166-1.505-1.452-1.505-1.233,0-2.675.369-2.675,1.408,0,.892,1.118,1.762,2.156,2L2.287,15.845c-.028.027-.048.054-.073.082A7.011,7.011,0,0,0,0,20.734v4.577a4.175,4.175,0,0,0,1.146,2.871v1.775a1.914,1.914,0,0,0,1.938,1.884H5.426a1.913,1.913,0,0,0,1.937-1.884V29.5h20.99v.454a1.912,1.912,0,0,0,1.938,1.884h2.342a1.913,1.913,0,0,0,1.937-1.884V28.182a4.172,4.172,0,0,0,1.146-2.871V20.734A7,7,0,0,0,33.5,15.927Zm-23.58-4.92a3.229,3.229,0,0,1,1.644-.666H24.15a3.229,3.229,0,0,1,1.644.666l4.234,4.1H5.689Zm-8.47,9.035A2.008,2.008,0,0,1,3.424,18c1.088,0,4.645,2.088,4.645,3.215s-3.557.866-4.645.866A2,2,0,0,1,1.453,20.042ZM7.364,27.5H6.613l-2.227,0a4.234,4.234,0,0,1-1.362-.658,1.932,1.932,0,0,1-.369-.375,1.466,1.466,0,0,1-.207-.378,1.722,1.722,0,0,1,.3-1.5h3.8l2.534,2.908Zm15.96,0H12.394a2.065,2.065,0,0,1-2.064-2.064H25.388A2.064,2.064,0,0,1,23.323,27.5Zm.48-3.472H11.914c-1.239,0-2.245-1.528-2.245-3.412H26.048C26.048,22.5,25.042,24.025,23.8,24.025ZM33.27,26.09a1.476,1.476,0,0,1-.208.378,1.891,1.891,0,0,1-.369.375,4.2,4.2,0,0,1-1.362.658l-2.227,0H26.638l2.535-2.908h3.8A1.718,1.718,0,0,1,33.27,26.09Zm-.977-4.009c-1.088,0-4.644.26-4.644-.866S31.205,18,32.293,18a2.042,2.042,0,0,1,0,4.081Z" transform="translate(0)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

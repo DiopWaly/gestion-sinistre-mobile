@@ -1,0 +1,124 @@
+@import "../../assets/styles/color.scss";
+
+.logo{
+  ion-img{
+    width: 140px !important;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  margin-top:  31.75px;
+  margin-bottom: 10.75px;
+}
+ion-button{
+  font-family: "Rawson-SemiBold";
+  font-size: 15px;
+  text-transform: uppercase;
+}
+ion-label{
+  color: $labelInput !important;
+  font-family: "Rawson-SemiBold" !important;
+  font-size: 13px !important;
+  max-width: 218.25px !important;
+  width: 100% !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  // color: $succes;
+}
+
+ion-input{
+  width: 218.25px;
+  height: 24px;
+  border-bottom: 1px solid $borderBottomInput;
+  font-family: "Rawson-Medium";
+  font-size: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  --padding-bottom: 0 !important;
+  --padding-top: 0 !important;
+  ion-img{
+    position: absolute;
+    transform: translateX(200px);
+    cursor: pointer;
+  }
+}
+.forgetPsw{
+  width: 218.25px;
+  cursor: pointer;
+  text-decoration: underline;
+  text-align: right;
+  color: $succes;
+  font-family: "Rawson-SemiBold";
+  font-size: 10.5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.connexion{
+  width: 218.25px !important;
+  height: 33.75px !important;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: "rawson-SemiBold";
+  font-size: 20px;
+}
+
+.connexion:hover{
+  background-color: $success-hover !important;
+}
+
+.empreinte{
+  color: $succes !important;
+  font-family: "rawson-SemiBold";
+  text-transform: uppercase !important;
+  font-size: 10px;
+  text-align: center;
+}
+
+.finger{
+  color: $succes;
+  font-family: "rawson-SemiBold";
+  font-size: 7.75px;
+  text-align: center;
+  margin-top: -8px;
+}
+
+.fingerprint{
+  margin-top: 19.5px;
+  ion-img{
+    width: 41.25px;
+    height: 58.5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  margin-bottom: 25px;
+}
+
+.connexionReussie{
+  ion-img{
+    width: 61.5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.reuissie{
+  margin-top: 180px;
+  margin-bottom: 172px; //172px
+}
+.txtReuissie{
+  color: $succes;
+  font-family: "Rawson-SemiBold";
+  text-transform: uppercase;
+  font-size: 17.25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.illustration{
+  ion-img{
+    width: 294px;
+    height: 100.75px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

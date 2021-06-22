@@ -1,0 +1,157 @@
+@import "../../../assets/styles/color.scss";
+ion-toolbar{
+  .retour{
+    position: absolute;
+    cursor: pointer;
+  }
+}
+ion-title{
+  // width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  .title{
+    width: 179px;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+    color: $succes;
+    font-family: "Rawson-Bold";
+    font-size: 19px;
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 0;
+  }
+  hr{
+    width: 30.5px;
+    border: none;
+    border-top: 0.2em solid $maron;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+.souscriptionGarant{
+  cursor: pointer;
+  // width: 246.5px;
+  // height: 72px;
+  background-color: $subscriptionbg;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 3px 6px $ombreCard;
+  border-radius: 0;
+  padding: 0;
+  // margin-bottom: 10px;
+  .garant{
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    // .vehicule{
+    //   // width: 52.5px;
+    //   height: 52.5px;
+    //   background-color: $succes;
+    //   // position: absolute;
+    //   // left: 0;
+    //   // transform: translateX(-15px);
+    // }
+  }
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+.vehicule{
+  width: 52.5px;
+  height: 52.5px;
+  background-color: $succes;
+  z-index: 999;
+  position: absolute;
+  margin-top: 19px;
+  // left: 0;
+  // transform: translateX(-15px);
+}
+
+.marque,.modele,.collusion, .collusion2{
+  color: $succes;
+  font-family: "Rawson-SemiBold";
+  font-size: 12px;
+  padding: 0;
+}
+.typeSinistre, .policeAssurance, .approuver, .duree{
+  color: $succes;
+  font-family: "Rawson-Medium";
+  font-size: 9px;
+  padding: 0;
+  padding-top: 2px;
+}
+.collusion{
+  font-size: 10px;
+  font-family: "Rawson-Bold";
+  text-transform: uppercase;
+}
+.modele{
+  text-transform: uppercase;
+}
+.etap{
+  ion-img{
+    width: 40px;
+  }
+  padding: 0;
+  .etapLabel{
+    color: $greenAppreciation;
+    padding: 0;
+    font-family: "Rawson-Medium";
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+  .a{
+    color: $greenAppreciation;
+  }
+  .b{
+    color: $pinkAppreciation;
+  }
+}
+.duree{
+  font-size: 8px;
+}
+
+.nom, .prenom, .typeA{
+  color: $succes;
+  font-family: "Rawson-Medium";
+  font-size: 8px;
+  text-transform: uppercase;
+  padding: 0;
+}
+.nomdupers, .prenomdupers, .num{
+  color: $succes;
+  font-family: "Rawson-Bold";
+  font-size: 10px;
+  padding: 0;
+}
+.detailAssurance{
+  color: $succes;
+  font-family: "Rawson-Medium";
+  font-size: 10px;
+  padding: 0;
+  margin-bottom: 5px;
+  hr{
+    width: 107px;
+    border: none;
+    border-bottom: 1px solid $succes;
+    transform: translate(83px,-10px);
+    margin: 0;
+  }
+}
+.num{
+  font-size: 8px;
+  margin-bottom: 5px;
+}
+.collusion2{
+  margin-bottom: 8px;
+}
+.illustration{
+  bottom: 0;
+  margin-top: 43px;
+  // position: relative;
+}
+.etapImg{
+  ion-img{
+    width: 10px;
+  }
+}

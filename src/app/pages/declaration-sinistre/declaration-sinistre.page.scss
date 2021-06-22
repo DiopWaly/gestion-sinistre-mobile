@@ -1,0 +1,403 @@
+@import "../../../assets/styles/color.scss";
+  .masquer{
+    display: none;
+  }
+ion-title{
+  // width: 220px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  .title{
+    text-transform: uppercase;
+    color: $succes;
+    font-family: "Rawson-Bold";
+    font-size: 17.25px;
+    // text-align: right;
+    margin-top: 12px;
+    margin-bottom: 0;
+  }
+  hr{
+    width: 30.5px;
+    border: none;
+    border-top: 0.26em solid $maron;
+    // transform: translateY(-18px);
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .subtitle{
+    color: $succes;
+    font-family: "Rawson-LightIt";
+    font-size: 11px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.listSinistre{
+  margin-top: 100px;
+  margin-bottom: 133px;
+}
+
+ion-button{
+  width: 218.25px;
+  height: 33.75px;
+  p{
+    font-family: "Rawson-SemiBold";
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-top: 2.5px;
+  }
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+
+.illustration{
+  margin-right: 5px;
+  margin-left: 5px;
+  // margin-top: 133px;
+}
+ion-select{
+  width: 255px;
+  height: 37.5px;
+  background-color: #D3EAE9;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  text-align: left;
+  padding-right: 15px;
+  color: $succes;
+  font-family: "Rawson-SemiBold";
+  font-size: 16px;
+  margin-bottom: 245px;
+}
+
+.choixVoiture{
+  text-align: center;
+  span{
+    color: $succes;
+    font-family: "Rawson-LightIt";
+    font-size: 14px;
+  }
+  margin-top: 25px;
+}
+
+.suivant{
+  margin-left: auto;
+  margin-right: auto;
+  width: 218.25px;
+  height: 33.75px;
+  p{
+    font-family: "Rawson-SemiBold";
+    font-size: 16px;
+  }
+  // margin-top:   200px;
+  margin-bottom: 2px;
+}
+.step{
+  width: 218.25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+
+.stepper{
+  display: inline-block;
+  width: 19.5px;
+  height: 2.5px;
+  margin-left: 7.5px;
+}
+.active{
+  background-color: $succes;
+}
+.inactive{
+  background-color: $stepInactive;
+}
+
+.declaration{
+  margin-bottom: 18px;
+}
+
+.pass{
+  width: 255px;
+  height: 37.5px;
+  background-color: $white;
+  box-shadow: 0px 3px 6px $ombreCard;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  ion-col{
+    text-align: left;
+    ion-label{
+      color: $succes;
+      font-family: "Rawson-SemiBold";
+      font-size: 15px;
+    }
+    .d_0{
+      width: 32.25px;
+      height: 20.25px;
+    }
+    .d_1{
+      width: 18px;
+      height: 23.25px;
+    }
+    .d_2{
+      width: 25.5px;
+      height: 21px;
+    }
+    .d_3{
+      width: 28.5px;
+      height: 19.5px;
+    }
+    .d_4{
+      width: 16.5px;
+      height: 27.75px;
+    }
+    .d_5{
+      width: 18px;
+      height: 4.5px;
+      margin-top: 8px;
+    }
+  }
+}
+.map{
+  width: 100%;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  ion-img{
+    width: 103%;
+    // height: 206.25px; //after integration du map
+  }
+  .lieu{
+    width: 255px;
+    height: 37.5px;
+    box-shadow: 0px 3px 6px $ombreCard;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    .position{
+      margin-left: 12px;
+      .labelposition{
+        padding-left: 0;
+        span{
+          color: $succes;
+          font-family: "Rawson-SemiBold";
+          font-size: 13px;
+        }
+        text-align: left;
+      }
+      .google-map-web{
+        ion-img{
+          width: 10px;
+        }
+      }
+    }
+  }
+}
+.description{
+  ion-textarea{
+    border: 1px solid $borderTextarea;
+    --placeholder-color: #D3EAE9;
+    --placeholder-font-style: "Rawson-LightIt";
+    --placeholder-opacity: .5;
+    --padding-top: 3px;
+    --padding-bottom: 3px;
+    --padding-start: 3px;
+    --padding-end: 3px;
+    --color: $succes;
+    font-family: "Rawson-LightIt";
+    font-size: 15px;
+  }
+  margin-top: 20px;
+  margin-bottom: 165px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.documents{
+  width: 256.5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+}
+.upload{
+  cursor: pointer;
+  background-color: $succes;
+  width: 124.5px;
+  height: 33.75px;
+  margin-left: auto;
+  margin-right: 2px;
+}
+.photo{
+  cursor: pointer;
+  width: 124.5px;
+  height: 33.75px;
+  border: 1px solid $maron;
+  margin-right: auto;
+  margin-left: 2px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.iconupload{
+  padding-top: 3px;
+  ion-img{
+    width: 19px;
+  }
+}
+.telecheger{
+  text-align: left;
+  padding: 0;
+  padding-top: 2px;
+  padding-left: 1px;
+  span{
+    color: $white;
+    font-family: "Rawson-SemiBold";
+    font-size: 12px;
+    text-transform: uppercase;
+
+  }
+}
+
+.photolabel{
+  text-align: left;
+  padding: 0;
+  span{
+    color: $maron;
+    font-family: "Rawson-SemiBold";
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+}
+
+.listfiles{
+  margin-top: 19px;
+  margin-bottom: 120px;
+  .listfile{
+    width: 255px;
+    height: 37.5px;
+    box-shadow: 0px 3px 6px $ombreCard;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15px;
+    padding-right: 2px;
+  }
+}
+
+.iconType{
+  ion-img{
+    width: 20px;
+  }
+}
+.supprimer-btn{
+  ion-img{
+    margin-top: 8px;
+  }
+}
+.uprecaptilatif{
+  margin-top: -23px;
+}
+.recaptulatif{
+  width: 255px;
+  margin-left: auto;
+  margin-right: auto;
+  p,.addresslab{
+    font-family: "Rawson-SemiBold";
+    font-size: 12px;
+    margin: 0;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .label{
+    color: $boderHome;
+    margin-bottom: 1px;
+  }
+  .data{
+    color: $succes;
+    margin-bottom: 8px;
+  }
+  .addressIcon{
+    padding-left: 0;
+    padding-right: 0;
+    ion-img{
+      width: 10px;
+    }
+  }
+  .addresslab{
+    padding-left: 0;
+    span{
+      font-family: "Rawson-SemiBold";
+      color: $succes;
+      font-size: 12px;
+    }
+  }
+  ion-input{
+    // width: 100;
+    // height: 24px;
+    text-align: left;
+    border-bottom: 1px solid $borderBottomInput;
+    font-family: "Rawson-Medium";
+    color: $succes;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    --padding-bottom: 0 !important;
+    --padding-top: 0 !important;
+    --padding-left: 0 !important;
+  }
+  .mailAddress{
+    // margin-top: -1px;
+  }
+}
+.succes{
+  width: 250px;
+  margin-top: 50px;
+  color: $succes;
+  margin-left: auto;
+  margin-right: auto;
+  ion-img{
+    width: 99px;
+    height: 117px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .v{
+    font-family: "Rawson-Bold";
+    font-size: 13px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .p, .d, .numero{
+    font-family: "Rawson-Medium";
+    font-size: 12px;
+    text-align: center;
+  }
+  .p{
+    margin-bottom: 0;
+  }
+  .d{
+    margin-top: 5px;
+  }
+  .numero{
+    margin-top: 18px;
+  }
+  .newdemande{
+    width: 250px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    p{
+      font-family: "Rawson-SemiBold";
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+  }
+
+}
+agm-map{
+  height: 150px;
+}

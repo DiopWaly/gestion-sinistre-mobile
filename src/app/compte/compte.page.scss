@@ -1,0 +1,44 @@
+@import "../../assets/styles/color.scss";
+
+.logo{
+  ion-img{
+    width: 294px !important;
+    height: 114px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:  47.25px;
+  }
+  // margin-top: 20px;
+  margin-bottom: 77.25px;
+}
+.illustration{
+  ion-img{
+    width:  294px;
+    height: 120.75px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.login, .creerCmpt{
+  width: 218.25px !important;
+  height: 33.75px !important;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: "rawson-SemiBold";
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.login{
+  margin-top: 33px;
+}
+.creerCmpt{
+  margin-top: 12px;
+}
+
+.login:hover{
+  // --background: $success-hover !important;
+  --background-hover: $success-hover !important;
+}
+.creerCmpt:hover{
+  background-color : $medium-hover ;
+}

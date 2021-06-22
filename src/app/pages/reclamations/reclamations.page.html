@@ -1,0 +1,124 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title class="ion-no-padding">
+      <p>Mes réclamations</p>
+      <hr />
+    </ion-title>
+    <ion-buttons slot="start" (click)="pop()" class="retour">
+      <ion-icon name="chevron-back-outline" color="success" style="zoom:2;"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <span *ngIf="!detail">
+    <ion-card *ngFor="let r of reclamations" (click)="detailClick(r)">
+      <ion-card-content>
+        <ion-row>
+          <ion-col size="6" class="marque">
+            <p>{{r.marque}}</p>
+          </ion-col>
+          <ion-col size="1"></ion-col>
+          <ion-col size="5" class="typeSinistre">
+            <p>{{r.typeSinistre}}</p>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col size="6" class="modele">
+            <p>{{r.modele}}</p>
+          </ion-col>
+          <ion-col size="1"></ion-col>
+          <ion-col size="5" class="collusion">
+            <p>{{r.col}}</p>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col size="6" class="numero">
+            <p>{{r.num}}</p>
+          </ion-col>
+          <ion-col size="1"></ion-col>
+          <ion-col size="5" class="datecard">
+            <p>{{r.date}}</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="6">
+            <p [class]="'appreciation '+ r.class">{{r.appreciation}}</p>
+          </ion-col>
+          <ion-col size="1"></ion-col>
+          <ion-col size="5" class="etap">
+            <p>{{r.etap}}</p>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+    <ion-item lines="none">
+      <ion-button color="medium" expand="full" class="soumettre" (click)="soumettre()"><p>Soumettre une demande</p></ion-button>
+    </ion-item>
+  </span>
+  <!-- *ngIf="step === 9" -->
+  <div class="ion-no-padding resultat" *ngIf="detail">
+      <ion-card>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="6" class="marque">
+              <p>{{r.marque}}</p>
+            </ion-col>
+            <ion-col size="1"></ion-col>
+            <ion-col size="5" class="typeSinistre">
+              <p>{{r.typeSinistre}}</p>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col size="6" class="modele">
+              <p>{{r.modele}}</p>
+            </ion-col>
+            <ion-col size="1"></ion-col>
+            <ion-col size="5" class="collusion">
+              <p>{{r.col}}</p>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col size="6" class="numero">
+              <p>{{r.num}}</p>
+            </ion-col>
+            <ion-col size="1"></ion-col>
+            <ion-col size="5" class="datecard">
+              <p>{{r.date}}</p>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="6">
+              <p [class]="'appreciation '+ r.class">{{r.appreciation}}</p>
+            </ion-col>
+            <ion-col size="1"></ion-col>
+            <ion-col size="5" class="etap">
+              <p>{{r.etap}}</p>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+      <div class="container">
+        <div *ngFor="let stepbar of stepBars" [class]="stepbar.level">
+          <div class="v-stepper">
+            <div class="circle">
+              <ion-img [src]="validImg" alt=""></ion-img>
+            </div>
+            <div class="line"></div>
+          </div>
+          <ion-row>
+            <ion-col size="9" class="content"><span>{{stepbar.step}}</span></ion-col>
+            <ion-col size="3" class="date"><p>{{stepbar.date}}</p></ion-col>
+          </ion-row>
+      </div>
+    </div>
+  </div>
+  <ion-item lines="none" class="illustration">
+    <ion-img src="../../assets/icons/auth/illustration-salama-web.svg"></ion-img>
+  </ion-item>
+
+</ion-content>

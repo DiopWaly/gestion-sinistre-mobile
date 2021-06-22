@@ -1,0 +1,202 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title class="ion-no-padding">
+      <p class="title">{{title}}</p>
+      <p [ngClass]="step < 1 ? 'masquer' :'subtitle' ">{{subt}}</p>
+      <!-- <span>{{subt}}</span> -->
+      <hr [ngClass]="step > 1 ? 'masquer' :'' "/>
+    </ion-title>
+    <ion-buttons slot="start" [ngClass]="step === 8 ? 'masquer' :'' " (click)="pop()">
+      <ion-icon name="chevron-back-outline" color="success" style="zoom:2;"></ion-icon>
+      <!-- <ion-button slot="end">
+        <ion-icon name="notifications" color="success" style="zoom:2;"></ion-icon>
+      </ion-button> -->
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list lines="none" class="listSinistre" *ngIf="step === 0">
+    <ion-item *ngFor="let t of typeSinistres">
+      <ion-button [color]="t.color" expand="full" (click)="suivant()"><p>{{t.sinistre}}</p></ion-button>
+    </ion-item>
+  </ion-list>
+  <div *ngIf="step > 0 && step < 8" class="choixVoiture">
+
+    <div *ngIf="step === 1">
+        <span>Choisir la voiture</span>
+        <ion-select interface="popover">
+          <ion-select-option *ngFor="let v of voitures" [value]="v.value" (click)="select()">
+            {{v.marque}}
+          </ion-select-option>
+        </ion-select>
+    </div>
+    <div *ngIf="step === 2" class="declaration">
+      <div class="pass" *ngFor="let d of declarationSinistres;let i=index">
+        <ion-row>
+          <ion-col size="2">
+            <ion-img [src]="d.img" [class]="'d_'+i"></ion-img>
+          </ion-col>
+          <ion-col size="10">
+            <ion-label>{{d.type}}</ion-label>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+    <div class="ion-padding" *ngIf="step === 3">
+      <!-- [type]="type" -->
+      <ion-calendar [(ngModel)]="date"
+        (onChange)="onChange($event)"
+        format="YYYY-MM-DD">
+      </ion-calendar>
+    </div>
+    <!-- <div class="map animated rotateIn">
+      <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom" alt="chargement du maps">
+        <agm-marker [latitude]="latitude" [longitude]="longitude" [markerDraggable]="true">
+        </agm-marker>
+      </agm-map>
+    </div> -->
+    <div *ngIf="step === 4" class="map ion-no-padding" fullscreen = "true">
+      <div class="lieu">
+          <ion-row class="position">
+            <ion-col size="1" class="google-map-web">
+              <ion-img src="../../assets/icons/tab/google-map-web.svg"></ion-img>
+            </ion-col>
+            <ion-col size="10" class="labelposition">
+              <!-- <span>DAKAR (SÉNÉGAL)</span> -->
+              <span>{{address}}</span>
+            </ion-col>
+          </ion-row>
+      </div>
+      <agm-map
+            [latitude]="recapitulatif.lieu.lat"
+            [longitude]="recapitulatif.lieu.long"
+            [zoom]="recapitulatif.lieu.zoom">
+        <agm-marker
+            [latitude]="recapitulatif.lieu.lat"
+            [longitude]="recapitulatif.lieu.long"
+            [markerDraggable]="true"></agm-marker>
+      </agm-map>
+    </div>
+    <ion-item class="description" lines="none" *ngIf="step === 5">
+      <ion-textarea rows="6" cols="20" placeholder="Petite description…."></ion-textarea>
+    </ion-item>
+    <div class="documents" *ngIf="step === 6">
+      <ion-row>
+        <!-- (click)="upload.click()" -->
+        <ion-col class="upload">
+          <form>
+            <ion-input type="file" hidden #upload accept=".pdf, .jpg, .jpeg, .png"></ion-input>
+          </form>
+          <ion-row>
+            <ion-col size="3" class="iconupload"><ion-img src="../../assets/icons/tab/downloadImg/upload-icon-web.svg"></ion-img></ion-col>
+            <ion-col size="9" class="telecheger"><span>Télécharger</span></ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col class="photo">
+          <!-- <ion-img src="../../assets/icons/tab/downloadImg/btn-utiliser-appareil-photo.svg"></ion-img> -->
+          <ion-row>
+            <ion-col size="2" class="iconapareilphoto"></ion-col>
+            <ion-col size="10" class="photolabel"><span>Utiliser l’appareil</span></ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+      <div class="listfiles">
+        <div class="listfile">
+          <ion-row>
+            <ion-col size="2" class="iconType">
+              <ion-img src="../../assets/icons/tab/downloadImg/filesAction/pdf-icon.svg"></ion-img>
+            </ion-col>
+            <ion-col size="9"></ion-col>
+            <ion-col size="1" class="supprimer-btn">
+              <ion-img src="../../assets/icons/tab/downloadImg/filesAction/supprimer-btn.svg"></ion-img>
+            </ion-col>
+          </ion-row>
+        </div>
+        <div class="listfile">
+          <ion-row>
+            <ion-col size="2" class="iconType">
+              <ion-img src="../../assets/icons/tab/downloadImg/filesAction/jpg-icone.svg"></ion-img>
+            </ion-col>
+            <ion-col size="9"></ion-col>
+            <ion-col size="1" class="supprimer-btn">
+              <ion-img src="../../assets/icons/tab/downloadImg/filesAction/supprimer-btn.svg"></ion-img>
+            </ion-col>
+          </ion-row>
+        </div>
+        <div class="listfile">
+          <ion-row>
+            <ion-col size="2" class="iconType">
+              <ion-img src="../../assets/icons/tab/downloadImg/filesAction/pdf-icon.svg"></ion-img>
+            </ion-col>
+            <ion-col size="9"></ion-col>
+            <ion-col size="1" class="supprimer-btn">
+              <ion-img src="../../assets/icons/tab/downloadImg/filesAction/supprimer-btn.svg"></ion-img>
+            </ion-col>
+          </ion-row>
+        </div>
+      </div>
+    </div>
+    <div class="ion-no-padding uprecaptilatif" *ngIf="step === 7">
+      <div class="recaptulatif">
+        <p class="label">Véhicule</p>
+        <p class="data">{{recapitulatif.vehicule}}</p>
+        <p class="label">Type de sinistre</p>
+        <p class="data">{{recapitulatif.typeDeSinistre}}</p>
+        <p class="label">Date</p>
+        <p class="data">{{recapitulatif.date}}</p>
+        <p class="label">Lieu</p>
+      </div>
+      <agm-map
+            [latitude]="recapitulatif.lieu.lat"
+            [longitude]="recapitulatif.lieu.long"
+            [zoom]="recapitulatif.lieu.zoom">
+        <agm-marker
+            [latitude]="recapitulatif.lieu.lat"
+            [longitude]="recapitulatif.lieu.long"
+            [markerDraggable]="true"></agm-marker>
+      </agm-map>
+      <div class="recaptulatif">
+        <ion-row>
+          <ion-col size="1" class="addressIcon"><ion-img src="../../assets/icons/tab/google-map-web.svg"></ion-img></ion-col>
+          <!-- <ion-col size="11" class="addresslab"><span>{{recapitulatif.lieu.address}}</span></ion-col> -->
+          <ion-col size="11" class="addresslab">
+            <span>{{address}}</span>
+          </ion-col>
+        </ion-row>
+        <p class="label">Documents joints</p>
+        <p class="data">{{recapitulatif.documentsjoints}}</p>
+        <p class="label">Contacts</p>
+        <ion-row>
+          <ion-col size="2">
+            <!-- <ion-select interface="popover">
+              <ion-select-option *ngFor="let t of tel">{{t}}</ion-select-option>
+            </ion-select> -->
+          </ion-col>
+          <ion-col size="8">
+            <ion-input></ion-input>
+          </ion-col>
+        </ion-row>
+        <ion-row class="">
+          <ion-col size="10" class="mailAddress">
+            <ion-input type="number"></ion-input>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+    <ion-button color="medium" expand="full" class="suivant" (click)="suivant()"><p>Suivant</p></ion-button>
+    <div lines="none" class="step">
+      <div *ngFor="let s of stepper" [ngClass]=" s ? 'stepper active' : 'stepper inactive'"></div>
+    </div>
+  </div>
+  <div class="succes" *ngIf="step === 8">
+    <ion-img src="../../assets/icons/tab/success-icone.svg"></ion-img>
+    <h1 class="v">Votre demande a été reçu avec succès</h1>
+    <p class="p">Vous pouvez suivre l’état d’avancement de</p>
+    <p class="d">Votre demande dans la sections MES DEMANDES</p>
+    <p class="numero">Numéro de demande <b>#2021A001</b></p>
+    <ion-button color="success" class="newdemande" expand="full" (click)="newDemande()"><p>Nouvelle demande</p></ion-button>
+  </div>
+  <!-- fullscreen="true" -->
+  <ion-img src="../../assets/icons/auth/illustration-salama-web.svg" class="illustration"></ion-img>
+</ion-content>

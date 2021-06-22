@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="12" viewBox="0 0 45 12">
+  <g id="Groupe_1163" data-name="Groupe 1163" transform="translate(-125 -157)">
+    <g id="active-souscription" transform="translate(109.7 149.2)">
+      <g id="Groupe_142" data-name="Groupe 142" transform="translate(15.3 9.512)">
+        <g id="Groupe_141" data-name="Groupe 141">
+          <path id="Tracé_954" data-name="Tracé 954" d="M69.8,17.794h0v0Z" transform="translate(-60.441 -17.772)" fill="#dbeff4"/>
+          <path id="Tracé_955" data-name="Tracé 955" d="M69.8,17.794h0v0Z" transform="translate(-60.441 -17.772)" fill="#dbeff4"/>
+          <path id="Tracé_956" data-name="Tracé 956" d="M15.3,18.383v0Z" transform="translate(-15.3 -18.258)" fill="#dbeff4"/>
+          <path id="Tracé_957" data-name="Tracé 957" d="M15.3,18.383v0Z" transform="translate(-15.3 -18.258)" fill="#dbeff4"/>
+        </g>
+      </g>
+      <path id="Tracé_958" data-name="Tracé 958" d="M26.629,9.929A10.091,10.091,0,0,1,22.439,7.8h-.017A10.023,10.023,0,0,1,18.3,10.015l.034,3.572a5.969,5.969,0,0,0,2.009,4.362,9.114,9.114,0,0,0,2.164,1.528c.017.017.034.017.069.034A9.6,9.6,0,0,0,24.757,17.9a5.955,5.955,0,0,0,1.906-4.4Z" transform="translate(-2.485)" fill="#12dd60"/>
+      <g id="Groupe_145" data-name="Groupe 145" transform="translate(18.03 11.509)">
+        <g id="Groupe_144" data-name="Groupe 144">
+          <g id="Groupe_143" data-name="Groupe 143">
+            <path id="Tracé_959" data-name="Tracé 959" d="M36.2,29.4l-3.28,3.263-1.288-1.288-.429.446,1.717,1.717,3.709-3.709Z" transform="translate(-31.2 -29.4)" fill="#fff"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <text id="Active" transform="translate(140 167)" fill="#12dd60" font-size="10" font-family="Rawson-Medium, Rawson" font-weight="500"><tspan x="0" y="0">ACTIVE</tspan></text>
+  </g>
+</svg>

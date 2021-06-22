@@ -24,3 +24,74 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+@import "assets/styles/color.scss";
+
+@font-face {
+  font-family: 'Rawson-SemiBold';
+  src: url("assets/fonts/rawson/Rawson-SemiBold.otf");
+}
+@font-face {
+  font-family: 'Rawson-Medium';
+  src: url("assets/fonts/rawson/Rawson-Medium.otf");
+}
+@font-face {
+  font-family: 'Rawson-Bold';
+  src: url("assets/fonts/rawson/Rawson-Bold.otf");
+}
+@font-face {
+  font-family: 'Rawson-LightIt';
+  src: url("assets/fonts/rawson/Rawson-LightIt.otf");
+}
+@font-face {
+  font-family: 'Rawson-MediumIt';
+  src: url("assets/fonts/rawson/Rawson-MediumIt.otf");
+}
+
+:root {
+  .popover-content {
+      // top: 144.49px !important;
+      // left: 738.944px !important;
+      overflow: hidden;
+      width: 125px;
+      border-radius: 0;
+      .popover-viewport .sc-ion-select-popover{
+        .sc-ion-select-popover{
+          .select-interface-option{
+            ion-label{
+                color: $succes;
+                font-family: "Rawson-SemiBold";
+               font-size: 13px;
+            }
+
+          }
+        }
+      }
+      .sc-ion-select-popover{
+        --border-style: none;
+      }
+      ion-item{
+        --min-height: 25px;
+        background-color: $succes !important;
+        cursor: pointer;
+      }
+      ion-item:hover{
+        --background: $succes;
+      }
+      ion-radio{
+        // display: none;//ici
+        // --highlight-color-focused: $succes;
+      }
+      .sc-ion-select-popover{
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+  }
+  .native-textarea.sc-ion-textarea-md{
+    overflow: hidden;
+    height: 140px;
+  }
+  .native-input.sc-ion-input-md{
+    padding-left: 0;
+  }
+}
