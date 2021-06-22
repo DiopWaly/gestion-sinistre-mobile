@@ -47,13 +47,18 @@
   font-family: 'Rawson-MediumIt';
   src: url("assets/fonts/rawson/Rawson-MediumIt.otf");
 }
+@font-face {
+  font-family: 'Arial-Regular';
+  src: url("assets/fonts/arial/Arial-Regular.ttf");
+}
 
 :root {
   .popover-content {
       // top: 144.49px !important;
       // left: 738.944px !important;
       overflow: hidden;
-      width: 125px;
+      // width: 125px;
+      width: 140px;
       border-radius: 0;
       .popover-viewport .sc-ion-select-popover{
         .sc-ion-select-popover{
@@ -77,10 +82,12 @@
       }
       ion-item:hover{
         --background: $succes;
+        ion-label{
+          color: $white !important;
+        }
       }
       ion-radio{
-        // display: none;//ici
-        // --highlight-color-focused: $succes;
+        --color-checked: $succes;
       }
       .sc-ion-select-popover{
         padding-top: 0;
@@ -94,4 +101,34 @@
   .native-input.sc-ion-input-md{
     padding-left: 0;
   }
+  button.days-btn{
+    border-radius: 0 !important;
+    p{
+      // color: $black !important;
+      font-family: "Arial-Regular";
+      font-family: 12px;
+    }
+  }
+
+ .primary .days .on-selected,
+ .primary .startSelection
+ button.days-btn, .primary
+ .endSelection button.days-btn{
+    background-color: $succes !important;
+    p{
+      color: $white !important;
+    }
+  }
+  .week-title.light,
+  .week-title.transparent{
+    color: $black !important;
+    font-family: "Arial-Regular";
+    font-family: 13px;
+  }
+  .title .switch-btn{
+    color: $maron !important;
+    text-transform: capitalize;
+    font-family: "Arial-Regular";
+  }
+
 }

@@ -243,6 +243,13 @@ ion-select{
   margin-left: 2px;
   padding-left: 0;
   padding-right: 0;
+  .iconapareilphoto{
+    padding: 0;
+    padding-top: 1.5px;
+    ion-icon{
+      font-size: 18px;
+    }
+  }
 }
 .iconupload{
   padding-top: 3px;
@@ -270,7 +277,7 @@ ion-select{
   span{
     color: $maron;
     font-family: "Rawson-SemiBold";
-    font-size: 11px;
+    font-size: 10px;
     text-transform: uppercase;
   }
 }
@@ -351,7 +358,8 @@ ion-select{
     --padding-left: 0 !important;
   }
   .mailAddress{
-    // margin-top: -1px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
 .succes{
@@ -400,4 +408,28 @@ ion-select{
 }
 agm-map{
   height: 150px;
+}
+.operateur{
+  .select-icon{
+    display: none;
+  }
+}
+.custom-options{
+  background-color: $white;
+  border-bottom: 1px solid $borderBottomInput;
+  max-width: 40px;
+  height: auto;
+  color: $succes;
+  font-family: "Rawson-SemiBold";
+  font-size: 13px;
+  margin-top: 3px;
+  // transform: translateX(10px);
+  margin-bottom: 0;
+}
+
+.number{
+  padding-left: 10px;
+}
+.calendar{
+  // height: 320px;
 }

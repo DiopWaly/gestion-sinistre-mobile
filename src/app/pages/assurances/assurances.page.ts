@@ -39,8 +39,19 @@ export class AssurancesPage implements OnInit {
       },
     ];
   }
-  detail(click: boolean){
-    this.click = !click;
+  detail(i: number){
+    // this.click = !click;
+    if(!this.subscription[i].detail){
+      this.subscription[i].detail = true;
+      for(let j=0; j < this.subscription.length; j++){
+        if(j !== i){
+          this.subscription[j].detail = false;
+        }
+      }
+    }else{
+      this.subscription[i].detail = false;
+    }
+
   }
   pop(){
     this.nav.pop();

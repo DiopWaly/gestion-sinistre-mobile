@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,13 +9,16 @@ import { Component, OnInit } from '@angular/core';
 export class LoginPage implements OnInit {
 
   connexion = false;
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
   connecter(){
     this.connexion = true;
+  }
+  onClick(){
+    this.router.navigate(['tabs/pwd-reinitialize']);
   }
 
 }

@@ -9,6 +9,7 @@ ion-title{
   // width: 220px;
   margin-left: auto;
   margin-right: auto;
+  // text-align: right;
   .title{
     width: 179px;
     margin-left: auto;
@@ -63,8 +64,17 @@ ion-title{
   z-index: 999;
   position: absolute;
   margin-top: 19px;
+  ion-icon{
+    color: $white;
+    font-size: 32px;
+    margin-top: 8px;
+  }
+  text-align: center;
   // left: 0;
   // transform: translateX(-15px);
+}
+.vehicule_d{
+  background-color: $maron;
 }
 
 .marque,.modele,.collusion, .collusion2{
@@ -131,15 +141,15 @@ ion-title{
   padding: 0;
   margin-bottom: 5px;
   hr{
-    width: 107px;
+    width: 100px;
     border: none;
-    border-bottom: 1px solid $succes;
-    transform: translate(83px,-10px);
+    border-bottom: 1px solid $labelInput;
+    transform: translate(80px,-10px);
     margin: 0;
   }
 }
 .num{
-  font-size: 8px;
+  font-size: 7.5px;
   margin-bottom: 5px;
 }
 .collusion2{
@@ -153,5 +163,8 @@ ion-title{
 .etapImg{
   ion-img{
     width: 10px;
+  }
+  .active{
+    width: 8px;
   }
 }

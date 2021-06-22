@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { NavController } from '@ionic/angular';
 
 @Component({
@@ -8,11 +9,17 @@ import { NavController } from '@ionic/angular';
 })
 export class MonProfilPage implements OnInit {
 
-  constructor(private nav: NavController) { }
+  constructor(
+    private nav: NavController,
+    private router: Router
+    ) { }
 
   ngOnInit() {
   }
   pop(){
     this.nav.pop();
+  }
+  enregistrer(){
+    this.router.navigate(['tabs']);
   }
 }

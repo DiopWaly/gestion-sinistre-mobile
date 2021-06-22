@@ -96,8 +96,10 @@
         <ion-col class="photo">
           <!-- <ion-img src="../../assets/icons/tab/downloadImg/btn-utiliser-appareil-photo.svg"></ion-img> -->
           <ion-row>
-            <ion-col size="2" class="iconapareilphoto"></ion-col>
-            <ion-col size="10" class="photolabel"><span>Utiliser l’appareil</span></ion-col>
+            <ion-col size="3" class="iconapareilphoto">
+              <ion-icon name="camera-outline" color="medium"></ion-icon>
+            </ion-col>
+            <ion-col size="9" class="photolabel ion-no-padding"><span>Utiliser l’appareil</span></ion-col>
           </ion-row>
         </ion-col>
       </ion-row>
@@ -168,18 +170,22 @@
         <p class="data">{{recapitulatif.documentsjoints}}</p>
         <p class="label">Contacts</p>
         <ion-row>
-          <ion-col size="2">
-            <!-- <ion-select interface="popover">
-              <ion-select-option *ngFor="let t of tel">{{t}}</ion-select-option>
-            </ion-select> -->
+          <ion-col size="2" class="ion-no-padding operateur">
+            <ion-select interface="popover" class="custom-options ion-no-padding">
+              <ion-select-option [value]="i" *ngFor="let t of tel;let i=index">{{t}}</ion-select-option>
+              <!-- <ion-select-option value="blonde">78</ion-select-option>
+              <ion-select-option value="black">76</ion-select-option>
+              <ion-select-option value="red">70</ion-select-option>
+              <ion-select-option value="red">79</ion-select-option> -->
+            </ion-select>
           </ion-col>
-          <ion-col size="8">
+          <ion-col size="8" class="number">
             <ion-input></ion-input>
           </ion-col>
         </ion-row>
         <ion-row class="">
-          <ion-col size="10" class="mailAddress">
-            <ion-input type="number"></ion-input>
+          <ion-col size="10" class="ion-no-padding mailAddress">
+            <ion-input type="email" placeholder="Email"></ion-input>
           </ion-col>
         </ion-row>
       </div>

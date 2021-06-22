@@ -16,7 +16,7 @@ export class DeclarationSinistrePage implements OnInit {
   public typeSinistres:  any[] = [];
   public voitures: any[] = [];
   stepper: boolean[]  = [];
-  step = 0;
+  step = 6;
   public declarationSinistres: any[] = [];
   private urlImg = '../../assets/icons/tab/declarations/';
   public subt = '';
@@ -25,7 +25,8 @@ export class DeclarationSinistrePage implements OnInit {
   public recapitulatif: any;
   public tel: number[] = [];
   date: string;
-  type: 'string';
+  // type: 'string';
+  public form: FormGroup;
 
   // latitude: number;
   // longitude: number;
@@ -86,6 +87,7 @@ export class DeclarationSinistrePage implements OnInit {
       this.setCurrentLocation();
       this.geoCoder = new google.maps.Geocoder();
     });
+    this.formInstantiation();
   }
 
   suivant(){
@@ -107,12 +109,13 @@ export class DeclarationSinistrePage implements OnInit {
     console.log('test-ici !!!');
   }
   onChange($event) {
-    console.log($event);
+    console.log('waly : ',$event);
   }
   newDemande(){
     this.step = 0;
     this.title = 'Déclaration de sinistre';
     this.subt = this.subTitle[this.step];
+    this.ngOnInit();
   }
   pop(){
     this.nav.pop();
@@ -144,6 +147,10 @@ export class DeclarationSinistrePage implements OnInit {
       }
     });
   }
-
+ formInstantiation(){
+   this.form = new FormGroup({
+     date: new FormControl('',Validators.compose([]))
+   });
+ }
 
 }
